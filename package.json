@@ -1,0 +1,28 @@
+{
+  "name": "canvas-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "web-dev-server --node-resolve --watch --open --config dev-server.config.js",
+    "tsc:watch": "tsc --watch --project tsconfig.json",
+    "start": "concurrently \"npm run server\" \"npm run watch\"",
+    "build": "rollup --config",
+    "watch": "rollup --config --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@web/dev-server": "^0.1.20",
+    "@web/dev-server-rollup": "^0.3.8",
+    "concurrently": "^6.2.1",
+    "rollup": "^2.56.1",
+    "tslib": "^2.3.0"
+  },
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
