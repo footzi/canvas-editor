@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.canvas {
+    outline: 1px solid red;
+    margin-top: 20px;
+}
+
+button.is-active {
+    background-color: blue;
+}

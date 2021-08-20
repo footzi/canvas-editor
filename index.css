@@ -1,26 +1,3 @@
-h1 {
-    color: red;
-}
-
-button.active {
-    background-color: red;
-}
-
-.buttons {
-    position: absolute;
-    left: 300px;
-}
-
-.paper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    outline: 1px solid red;
-}
-
-canvas {
-    width: 100%;
-    height: 100%;
+body {
+    background-color: black;
 }

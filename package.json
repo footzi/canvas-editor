@@ -5,24 +5,45 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "web-dev-server --node-resolve --watch --open --config dev-server.config.js",
+    "server": "web-dev-server --config dev-server.config.js",
     "tsc:watch": "tsc --watch --project tsconfig.json",
     "start": "concurrently \"npm run server\" \"npm run watch\"",
     "build": "rollup --config",
-    "watch": "rollup --config --watch"
+    "watch": "rollup --config --watch",
+    "prettier": "prettier --write src/*/**"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.4",
     "@rollup/plugin-typescript": "^8.2.5",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
     "@web/dev-server": "^0.1.20",
     "@web/dev-server-rollup": "^0.3.8",
     "concurrently": "^6.2.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^8.3.6",
     "rollup": "^2.56.1",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-postcss": "^4.0.1",
     "tslib": "^2.3.0"
   },
   "dependencies": {
+    "prettier": "^2.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "typescript": "^4.3.5"
   }
 }
